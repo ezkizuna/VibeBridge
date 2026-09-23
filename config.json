@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "vscode": {
+      "command": "launch_vscode_mcp.py",
+      "args": []
+    }
+  }
+}

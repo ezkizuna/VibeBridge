@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap');
+      .disp{ font-family:'Space Grotesk','Segoe UI',Arial,sans-serif; }
+      .mono{ font-family:'JetBrains Mono','Consolas',monospace; }
+    </style>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#20222a" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="fade" cx="0.5" cy="0.42" r="0.65">
+      <stop offset="0" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#2dd4bf" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="gridmask"><rect width="1280" height="640" fill="url(#fade)"/></mask>
+    <clipPath id="logoclip"><rect width="46" height="46" rx="10"/></clipPath>
+  </defs>
+
+  <!-- backdrop -->
+  <rect width="1280" height="640" fill="#0a0a0b"/>
+  <rect width="1280" height="640" fill="url(#grid)" mask="url(#gridmask)" opacity="0.9"/>
+  <rect width="1280" height="640" fill="url(#glow)"/>
+
+  <!-- logo -->
+  <g transform="translate(64,52)">
+    <image width="46" height="46" href="favicon.png" clip-path="url(#logoclip)"/>
+    <text class="disp" x="60" y="32" font-size="28" font-weight="700" fill="#f5f5f2">VibeBridge</text>
+  </g>
+
+  <!-- giant brackets -->
+  <path d="M168 272 L120 360 L168 448" fill="none" stroke="#f5f5f2" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1112 272 L1160 360 L1112 448" fill="none" stroke="#f5f5f2" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- eyebrow -->
+  <text class="mono" x="640" y="242" font-size="19" font-weight="500" letter-spacing="3" text-anchor="middle" fill="#8a8b83"><tspan fill="#2dd4bf" font-weight="700">&lt;</tspan>  OPEN SOURCE   /   FREE FOREVER  <tspan fill="#2dd4bf" font-weight="700">&gt;</tspan></text>
+
+  <!-- headline -->
+  <g class="disp" font-weight="700" text-anchor="middle">
+    <text x="640" y="328" font-size="62" fill="#f5f5f2">Chat your VSCode project</text>
+    <text x="640" y="398" font-size="62" fill="#f5f5f2">into existence. <tspan fill="#2dd4bf">Free.</tspan></text>
+  </g>
+
+  <!-- subtitle -->
+  <text class="disp" x="640" y="462" font-size="24" font-weight="500" text-anchor="middle" fill="#8a8b83">Genuinely free and unlimited - no API key, no credits, no subscription.</text>
+
+  <!-- ticker -->
+  <text class="mono" x="640" y="566" font-size="18" font-weight="500" text-anchor="middle" fill="#6f7068">unlimited prompts   ·   no API key   ·   no credits   ·   8 AI models   ·   open source</text>
+</svg>
